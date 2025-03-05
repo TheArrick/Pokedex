@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/047ad1abeb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="logo">
+        <img src="./assets/pokedex.svg" alt="pokeball" />
+        <h1>Pokedex</h1>
+    </div>
+    <div class="busqueda-container">
+        <div class=busqueda>
+            <input type="text" class="search" name="search" id="search">
+            <i class="fa-solid fa-xmark" id="borrarBusqueda"></i>
+
+        </div>
+    </div>
+
+    <div class="filtros">
+        <input type="radio" id="number" name="filtros" value="number" />
+        <label for="number">Number</label>
+        <input type="radio" id="name" name="filtros" value="name" />
+        <label for="name">Name</label>
+    </div>
+
+
+    <div class="pokemones">
+        <div class="container">
+
+            <div class="lista"></div>
+            <div class="not-found">
+                <h1>Pokemon not found</h1>
+            </div>
+        </div>
+        <div class="informacion">
+            <div class="info-container">
+                <div class="info-nombre-container">
+
+                    <h1 class="info-nombre"></h1>
+                    <h1 class="info-id"></h1>
+                </div>
+                <div class="img-info">
+                    <img src="" alt="">
+                </div>
+
+                <div class="pokemon-info">
+                    <div class="tipo-container">
+
+                    </div>
+                    <div class="detalles">
+                        <div class="detalles-columna">
+                            <div class="detalles-nums">
+                                <img src="./assets/weight.svg" alt="weight" class="straighten" />
+                                <p class="peso-text"></p>
+
+                            </div>
+                            <p class="about-text">Weight</p>
+
+                        </div>
+                        <div class="detalles-columna">
+                            <div class="detalles-nums">
+                                <img src="./assets/height.svg" alt="height" class="straighten" />
+                                <p class="altura-text"></p>
+
+
+                            </div>
+                            <p class="about-text">Height</p>
+
+                        </div>
+                        <div class="detalles-columna">
+
+                            <div class="especial-text"></div>
+                        </div>
+                    </div>
+                    <p class="">Stats</p>
+                    <div class="stats-container">
+                        <div class="hola">
+                            <p class="stats">HP</p>
+                            <div class="stats-wrap" data-stat="HP">
+                                <progress value="" max="100" class="progress-bar"></progress>
+                            </div>
+
+                        </div>
+                        <div class="stats-wrap" data-stat="ATK">
+                            <p class="stats">ATK</p>
+                            <p></p>
+                            <progress value="" max="100" class="progress-bar"></progress>
+                        </div>
+                        <div class="stats-wrap" data-stat="DEF">
+                            <p class="stats">DEF</p>
+                            <progress value="" max="100" class="progress-bar"></progress>
+                        </div>
+                        <div class="stats-wrap" data-stat="SPD">
+                            <p class="stats">DEF</p>
+                            <progress value="" max="100" class="progress-bar"></progress>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="select-pokemon">
+                <h1 class="select-text">Select a Pokemon</h1>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
